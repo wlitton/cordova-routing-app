@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/map.css">
+        <title>Route Planner</title>
+    </head>
+    <body>
+        <!--div class="app">
+            <h1>Apache Cordova</h1>
+            <div id="deviceready" class="blink">
+                <p class="event listening">Connecting to Device</p>
+                <p class="event received">Device is Ready</p>
+            </div>
+        </div-->
+        <div id="floating-panel">
+            <strong>Start:</strong>
+            <select id="starting">
+                <option value="murfreesboro, tn">Murfreesboro</option>
+                <option value="new baltimore, mi">New Baltimore, MI</option>
+                <option value="knoxville, tn">Knoxville</option>
+                <option value="northwood, oh">Northwood, OH</option>
+                <option value="conover, nc">Conover, NC</option>
+                <option value="fountain, co">Fountain, CO</option>
+                <option value="cedar rapids, ia">Cedar Rapids, IA</option>
+                <option value="flagstaff, az">Flagstaff, AZ</option>
+                <option value="jamestown, nc">Jamestown, NC</option>
+                <option value="toledo, oh">Toledo</option>
+                <option value="fort wayne, in">Fort Wayne</option>
+                <option value="raleigh, nc">Raleigh</option>
+                <option value="los angeles, ca">Los Angeles</option>
+            </select>
+            <br>
+            <strong>End:</strong>
+            <select id="ending">
+                <option value="murfreesboro, tn">Murfreesboro</option>
+                <option value="new baltimore, mi">New Baltimore, MI</option>
+                <option value="knoxville, tn">Knoxville</option>
+                <option value="northwood, oh">Northwood, OH</option>
+                <option value="conover, nc">Conover, NC</option>
+                <option value="fountain, co">Fountain, CO</option>
+                <option value="cedar rapids, ia">Cedar Rapids, IA</option>
+                <option value="flagstaff, az">Flagstaff, AZ</option>
+                <option value="jamestown, nc">Jamestown, NC</option>
+                <option value="toledo, oh">Toledo</option>
+                <option value="fort wayne, in">Fort Wayne</option>
+                <option value="raleigh, nc">Raleigh</option>
+                <option value="los angeles, ca">Los Angeles</option>
+            </select>
+        </div>
+        <div id="panel-wrapper">
+            <div id="right-panel-toggle" onclick="toggleDirPanel()">
+                <span id="panel-open" style="display:none">>></span>
+                <span id="panel-closed"><<</span>
+            </div>
+            <div id="right-panel">Directions</div>
+        </div>
+        <div id="map"></div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/map.js"></script>
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=[API_KEY]&callback=initMap">
+        </script>
+    </body>
+</html>
